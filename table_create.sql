@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS conjugations (verb text , conjugation text);

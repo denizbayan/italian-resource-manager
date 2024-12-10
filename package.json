@@ -1,0 +1,22 @@
+{
+  "name": "italian-resource-manager",
+  "version": "1.0.0",
+  "description": "Web source parser and server for italian practice project, parses and fills datasource for conjugation, articel etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "parser",
+    "server"
+  ],
+  "author": "Deniz Bayan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "node-html-parser": "^6.1.13",
+    "pg": "^8.13.1",
+    "prompt-sync": "^4.2.0"
+  }
+}
