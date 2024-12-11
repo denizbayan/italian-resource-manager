@@ -16,18 +16,18 @@ router.get('/:verb', (req,res,next) => {
         console.log(query_result)
         if(query_result.length == 0 ){
             conjugation_fetcher.fetchConjugation(req.params.verb).then(conjugation => {
-                json_conjugation = conjugation_parser.parseHTML(conjugation)
-                database_manager.saveConjugation(req.params.verb,JSON.stringify(json_conjugation)).then(x=>{
+                result = conjugation_parser.parseHTML(conjugation.toLowerCase())
+                database_manager.saveConjugation(req.params.verb,JSON.stringify(result)).then(()=>{
                     res.status(200).json({
-                        json_conjugation
+                        result
                     })
                 })
 
             });
         }else{
-            json_result = query_result[0]
+            result = JSON.parse(query_result[0].conjugation)
             res.status(200).json({
-                json_result
+                result
             })
         }
     })

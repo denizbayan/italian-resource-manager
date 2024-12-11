@@ -2,7 +2,7 @@
   "name": "italian-resource-manager",
   "version": "1.0.0",
   "description": "Web source parser and server for italian practice project, parses and fills datasource for conjugation, articel etc.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
